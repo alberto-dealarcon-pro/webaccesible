@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Iniciar servidor PHP",
+			"type": "shell",
+			"command": "php -S localhost:8000",
+			"args": [
+				"-t",
+				"."
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Iniciar servidor PHP",
+			"type": "shell",
+			"command": "php",
+			"args": [
+				"-S",
+				"localhost:8000",
+				"-t",
+				"."
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Iniciar servidor PHP (puerto 80)",
+			"type": "shell",
+			"command": "php",
+			"args": [
+				"-S",
+				"localhost:80",
+				"-t",
+				"."
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
