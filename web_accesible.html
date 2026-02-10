@@ -21,12 +21,20 @@
             outline-offset: 2px;
             box-shadow: 0 0 0 4px #FFB74D;
         }
+        .accesible-img {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .wcag-img {
+            height: 32px;
+            width: 88px;
+        }
     </style>
 </head>
 <body>
     <!-- Top Banner -->
     <header class="bg-primary text-white text-center py-3" role="banner">
-        <img src="images/accesible.jpg" height="100" alt="Accesible" style="margin-bottom: 10px;">
+        <img src="images/accesible.jpg" alt="Accesible" class="accesible-img">
         <h1>Bienvenido a la Web Accesible</h1>
     </header>
     <!-- Navbar accesible -->
@@ -84,7 +92,6 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <div class="container mt-5">
         <h2>Capacidad de los pantanos de Córdoba</h2>
         <table class="table table-bordered table-striped" aria-label="Capacidad de pantanos de Córdoba">
@@ -120,13 +127,13 @@
         </table>
     </div>
     <footer class="text-center mt-5">
-        <a href="http://www.w3.org/WAI/WCAG1A-Conformance"
-           title="Explicación del Nivel A de Conformidad">
-            <img height="32" width="88"
-                 src="http://www.w3.org/WAI/wcag1A"
-                 alt="Icono de conformidad con el Nivel A del W3C-WAI">
-        </a>
+          <a href="http://www.w3.org/WAI/WCAG1A-Conformance"
+              title="Explicación del Nivel A de Conformidad">
+                <img src="http://www.w3.org/WAI/wcag1A"
+                      alt="Icono de conformidad con el Nivel A del W3C-WAI" class="wcag-img">
+          </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
